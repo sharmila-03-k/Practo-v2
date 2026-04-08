@@ -9,50 +9,51 @@
     <center>
         <h2 style="color:green;">Doctor Registration Form</h2>
     </center>
-    <form>
-          <table frame="box" rules="none" cellpadding="15" align="center">
+    <form name="registration" action="/submit_registration" method="post">
+          <table frame="box" rules="none" cellpadding="15" align="center"> <br>
+            <caption><b>Fill in the details to register</b></caption>
             <tr>
                 <td>
-                    <label><b>Name:</b></label>
+                    <label for="id1"><b>Name:</b></label>
                 </td>
                 <td>
-                    <input type="text"> <br>
+                    <input type="text" id="id1" name="n1" placeholder="Enter your Name"> <br>
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    <label><b>Password:</b></label>
+                    <label for="id2"><b>Password:</b></label>
                 </td>
                 <td>
-                    <input type="password"> <br>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <label><b>Email:</b></label>
-                </td>
-                <td>
-                    <input type="email"> <br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label><b>Phone Number:</b></label>
-                </td>
-                <td>
-                    <input type="number"> <br>
-
+                    <input type="password" id="id2" name="n2" placeholder="Enter your Password"> <br>
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    <label><b>Specialization:</b></label>
+                    <label for="id4"><b>Email:</b></label>
                 </td>
                 <td>
-                    <select>
+                    <input type="email" id="id4" name="n4" placeholder="Enter your Email"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="id5"><b>Phone Number:</b></label>
+                </td>
+                <td>
+                    <input type="number" id="id5" name="n5" placeholder="Enter your Phone Number"> <br>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="id6"><b>Specialization:</b></label>
+                </td>
+                <td>
+                    <select id="id6" name="n6">
                         <option value="Cardiology">Cardiology</option>
                         <option value="Dermatology">Dermatology</option>
                         <option value="Neurology">Neurology</option>
@@ -67,59 +68,59 @@
 
             <tr>
                 <td>
-                    <label><b>Experience(years):</b></label>
+                    <label for="id7"><b>Experience(years):</b></label>
 
                 </td>
                 <td>
-                    <input type="number" min="0"> <br>
+                    <input type="number" min="0" id="id7" name="n7" placeholder="Enter your Experience"> <br>
 
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label><b>Gender:</b></label>
+                     <label for="id8"><b>Gender:</b></label>
                 </td>
                 <td>
-                    <input type="radio" value="Male"> Male
-                    <input type="radio" value="Female"> Female <br>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <label><b>Available Days:</b></label>
-
-                </td>
-                <td>
-                    <input type="checkbox" value="Monday"> Monday
-                    <input type="checkbox" value="Tuesday"> Tuesday
-                    <input type="checkbox" value="Wednesday"> Wednesday <br>
+                    <input type="radio" id="id8" name="n8" value="Male"> <label for="id8">Male</label>
+                    <input type="radio" id="id9" name="n9" value="Female"> <label for="id9">Female</label> <br>
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    <label><b>Available Time:</b></label>
+                    <label for="id10"><b>Available Days:</b></label>
+
                 </td>
                 <td>
-                    <input type="time"> <br>
+                    <input type="checkbox" id="id10" name="n10" value="Monday"> <label for="id10">Monday</label>
+                    <input type="checkbox" id="id11" name="n11" value="Tuesday"> <label for="id11">Tuesday</label>
+                    <input type="checkbox" id="id12" name="n12" value="Wednesday"> <label for="id12">Wednesday</label> <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="id13"><b>Available Time:</b></label>
+                </td>
+                <td>
+                    <input type="time" id="id13" name="n13"> <br>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label><b> Address:</b></label><br>
+                    <label for="id14"><b> Address:</b></label><br>
                 </td>
                 <td>
-                    <textarea rows="4" cols="30"></textarea>
+                    <textarea rows="4" cols="30" id="id14" name="n14" placeholder="Enter your Address"></textarea>
                     <br><br>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label><b>Upload Certificate:</b></label>
+                    <label for="id15"><b>Upload Certificate:</b></label>
                 </td>
                 <td>
-                    <input type="file"> <br>
+                    <input type="file" id="id15" name="n15"> <br>
                 </td>
             </tr>
 

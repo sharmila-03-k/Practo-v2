@@ -9,22 +9,23 @@
     <center>
         <h2 style="color:green;">Doctor Login</h2>
     </center>
-    <form>
-          <table frame="box" rules="none" cellpadding="15" align="center">
+    <form name="login" action="/submit_login" method="post">
+          <table frame="box" rules="none" cellpadding="15" align="center"><br>
+            <caption><b>Enter your credentials to login</b></caption>
             
             <tr>
                 <td>
-                    <label><b>Email:</b></label>
+                    <label for="id1"><b>Email:</b></label>
                 </td>
                 <td>
-                    <input type="email"> <br>
+                    <input type="email" id="id1" name="n1" placeholder="Enter your Email"> <br>
                 </td>
             <tr>
                 <td>
-                    <label><b>Password:</b></label>
+                    <label for="id2"><b>Password:</b></label>
                 </td>
                 <td>
-                    <input type="password"> <br>
+                    <input type="password" id="id2" name="n2" placeholder="Enter your Password"> <br>
                 </td>
             </tr>
               
